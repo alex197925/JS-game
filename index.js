@@ -14,3 +14,13 @@ console.log(randomImages1);
 document.querySelector(".dice .img1").setAttribute("src", randomImages1);
 document.querySelector(".dice .img2").setAttribute("src", randomImages2);
 
+
+// Check for the winner
+if(randomNumber1 > randomNumber2){
+    document.querySelector("h1").innerHTML = "Player 1 Wins!";
+}
+else if(randomNumber1 < randomNumber2){
+    document.querySelector("h1").innerHTML = "Player 2 Wins!";
+}else{
+    document.querySelector("h1").innerHTML = "Draw!";
+}
